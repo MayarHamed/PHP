@@ -1,6 +1,6 @@
 <?php
 $id = (isset($_GET["id"])) ? intval($_GET["id"]) : 0;
-$current_item = $db->get_record_by_id($id) [0]; 
+$current_item = $db->get_record_by_id($id) [0];
 ?>
 
 <html>
@@ -10,7 +10,7 @@ $current_item = $db->get_record_by_id($id) [0];
         <thead>
             <tr>
                 <th colspan="3"> <?php echo "Type:" . $current_item["category"]; ?>
-                <th> <?php echo "price" . $current_item["list_price"]; ?>  <br> </th></th>
+                <th> <?php echo "price" . $current_item["list_price"]; ?>  <br> </th>
             </tr>
             <tr>
                 <td colspan="3"> <strong> Details: </strong> 

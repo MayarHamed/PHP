@@ -2,7 +2,7 @@
 $current_index = isset($_GET["next"]) && is_numeric($_GET["next"]) ? (int) $_GET["next"] : 0;
 $next_index = $current_index + __RECORDS_PER_PAGE__;
 $previous_index = ($current_index - __RECORDS_PER_PAGE__ > 0) ? $current_index - __RECORDS_PER_PAGE__ : 0;
-$items = $db->get_all_records_paginated(array(), 0);
+$items = $db->get_all_records(array(), 0);
 ?>
 
 <table>
